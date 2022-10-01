@@ -163,7 +163,7 @@ AC_DEFINE([QD_HAVE_STD], [1], [Define to 1 if your compiler have the C++ standar
 AC_ARG_ENABLE([fortran], AS_HELP_STRING(--enable-fortran, [build Fortran 77/90 interfaces [[default=auto]]]))
 if test "$enable_fortran" != "no"; then
   AC_LANG_PUSH(Fortran)
-  AC_PROG_FC([xlf95 ifort pathf95 f95 gfortran g95 pgf95 lf95 fort ifc efc pathf90 xlf90 pgf90 epcf90 xlf f90])
+  AC_PROG_FC([xlf95 ifort pathf95 gfortran f95 g95 pgf95 lf95 fort ifc efc pathf90 xlf90 pgf90 epcf90 xlf f90])
   if test "$FC" != ""; then
     enable_fortran="yes"
     AC_DEFINE([HAVE_FORTRAN], [1], [Define to 1 if Fortran interface is to be compiled.])
